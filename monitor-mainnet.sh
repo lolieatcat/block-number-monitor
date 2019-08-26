@@ -2,8 +2,8 @@
 set -x
 
 echo "Mainnet blockNumber monitor start"
-blockNumber=""
-oldBlockNumber=""
+blockNumber="N/A"
+oldBlockNumber="N/A"
 err=0
 while true 
 do
