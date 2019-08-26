@@ -23,7 +23,7 @@ then
 fi
 
 sleep 5
-oldBlockNumber = $blockNumber
+oldBlockNumber=$blockNumber
 echo $oldBlockNumber
 done
 
