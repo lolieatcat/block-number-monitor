@@ -10,7 +10,7 @@ do
 blockNumber=$(curl -X POST --data '{"method":"eth_blockNumber","params":[],"id":"1","jsonrpc":"2.0"}' http://localhost:6666/)
 echo $blockNumber
 
-if [ $blockNumber -eq $oldBlockNumber ]
+if [ "$blockNumber" == "$oldBlockNumber" ]
 then 
     ((err++))
 else
