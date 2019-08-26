@@ -17,7 +17,7 @@ else
     err=0
 fi
 
-if [ "$err" -gt 2 ] 
+if [ "$err" -gt 120 ] 
 then
     echo $blockNumber|mail -v -s "Testnet blockNumber stoped" molin@wanchain.org
     err=0
