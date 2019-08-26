@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+#set -x
 
 echo "Mainnet blockNumber monitor start"
 blockNumber="N/A"
@@ -17,7 +17,7 @@ else
     err=0
 fi
 
-if [ "$err" -gt 1 ] 
+if [ "$err" -gt 120 ] 
 then
     echo $blockNumber|mail -v -s "Mainnet blockNumber stoped" molin@wanchain.org
     err=0
