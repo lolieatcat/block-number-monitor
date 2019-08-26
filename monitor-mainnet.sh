@@ -19,7 +19,8 @@ fi
 
 if [ "$err" -gt 1 ] 
 then
-    echo "Mainnet blockNumber delay"|mail -v -s "BlockNumber Warnning" molin@wanchain.org
+    echo $blockNumber|mail -v -s "Mainnet blockNumber stoped" molin@wanchain.org
+    err=0
 fi
 
 sleep 5
