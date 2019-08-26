@@ -22,8 +22,9 @@ then
     echo "Mainnet blockNumber delay"|mail -v -s "BlockNumber Warnning" molin@wanchain.org
 fi
 
-sleep 15
+sleep 5
 oldBlockNumber = $blockNumber
+echo $oldBlockNumber
 done
 
 
