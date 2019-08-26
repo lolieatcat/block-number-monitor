@@ -17,7 +17,8 @@ else
     err=0
 fi
 
-if [[ "$err" -gt 1 ]] then
+if [ "$err" -gt 1 ] 
+then
     echo "Mainnet blockNumber delay"|mail -v -s "BlockNumber Warnning" molin@wanchain.org
 fi
 
